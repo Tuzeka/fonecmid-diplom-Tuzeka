@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86959240-ed43-4ac5-9174-2ae406d0175c">
+  <producedTypes>
+    <objectType typeId="c79681c8-8201-4843-9024-0c7fc7b2284f" valueTypeId="ac5f967a-c86a-4c48-909a-42961c940126"/>
+    <managerType typeId="2f2769ff-887e-41d9-a773-d265baa11b51" valueTypeId="434f6a1d-3936-4fa7-8f23-5463036eb343"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.ВКМ_ФормаОбработки</defaultForm>
+  <attributes uuid="f6717368-a996-4422-8d44-d667318073ff">
+    <name>ВКМ_Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="781734ec-81da-4ca5-b870-eee3a81215d9">
+    <producedTypes>
+      <objectType typeId="de25e8aa-849b-45d0-8b54-0ecbe144918d" valueTypeId="d2f0c2a1-38c1-40f2-a30c-8be17391ae2c"/>
+      <rowType typeId="f2a37470-6df8-4368-9fac-f7bcd14af83e" valueTypeId="dbc5e56b-50ec-4584-8401-a5a4a47ae615"/>
+    </producedTypes>
+    <name>ВКМ_Договоры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договоры</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="16cb5e9a-3cbe-4557-81ba-e6be6f8a97a8">
+      <name>ВКМ_Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="57fc4464-052e-41d0-b6c3-fc9490c5f8b6">
+      <name>ВКМ_Реализация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Реализация</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b441374a-9e26-419e-8ed8-03bc1ff9af5a">
+      <name>ВКМ_Статус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1ec96796-4f9e-4567-a1f9-bfee30f04d19">
+    <name>ВКМ_ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="c06652e3-462e-4d75-a11b-10ee37d2ad85">
+    <name>ВКМ_МассовоеСозданиеАктов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Массовое создание актов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

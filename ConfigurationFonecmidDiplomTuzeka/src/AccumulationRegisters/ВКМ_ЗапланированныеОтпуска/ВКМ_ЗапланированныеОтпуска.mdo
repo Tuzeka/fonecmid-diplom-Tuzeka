@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="181fa7fa-97d4-47eb-b4f0-369904c7cdaf">
+  <producedTypes>
+    <selectionType typeId="46da1edd-6207-4d61-b96f-857abe23cffb" valueTypeId="25303408-e504-4fbb-95c6-717133dc3ff6"/>
+    <listType typeId="67a06797-39e8-4fca-bc9c-31942c42adc0" valueTypeId="25cbe934-ee6a-4ad9-a4a5-ee04cbfc7653"/>
+    <managerType typeId="739f8f30-b587-4d9f-9f1d-f9544ef2be78" valueTypeId="f2a77aa1-4a19-4f3e-9528-e7d0376ec805"/>
+    <recordSetType typeId="e2e5d0ab-afc7-4ef8-be1d-066d0085d464" valueTypeId="b9c9b4bc-ca7a-4af4-b4f4-0d2aa19c26c2"/>
+    <recordKeyType typeId="2db8c9e3-952d-48cb-a4f3-7c3cfe110cc3" valueTypeId="6085a389-3be2-4ada-a2f5-0e88ecc7bbf1"/>
+    <recordType typeId="12bfbdf7-b560-481c-b91b-1cb8738a989c" valueTypeId="cfb1e4ce-a4d4-460c-ab51-21e76833b349"/>
+  </producedTypes>
+  <name>ВКМ_ЗапланированныеОтпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запланированные отпуска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="69e67a56-3b0d-4f81-92f5-ca37b7f12695">
+    <name>ВКМ_КалендарныхДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарных дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="52ea251f-92c6-474a-b36d-e91f51c8d6fe">
+    <name>ВКМ_Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f0835277-9bbf-4fb0-8355-1d87cb1574d7">
+    <name>ВКМ_Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

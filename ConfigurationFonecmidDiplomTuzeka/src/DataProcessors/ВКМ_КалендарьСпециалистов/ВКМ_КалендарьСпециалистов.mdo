@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b27da3b-3dc8-4b31-a3df-89a983c4f9d1">
+  <producedTypes>
+    <objectType typeId="4dd35a2f-c4e3-4a65-89f5-554fe96ab7f9" valueTypeId="f4b9fcba-0a01-46f9-bd8c-4a276fdd6d0a"/>
+    <managerType typeId="65fd0ccd-020e-49ba-a8af-b79fbc362da1" valueTypeId="64daee9a-5e44-4ef0-bde6-7d058ac62cb4"/>
+  </producedTypes>
+  <name>ВКМ_КалендарьСпециалистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь специалистов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_КалендарьСпециалистов.Form.Форма</defaultForm>
+  <forms uuid="2e6b459e-2b18-43bf-afa4-8d63d49001b8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4f216c70-57db-4efd-9a2b-d62dd319180a">
+    <name>ВКМ_КалендарьСпециалистов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь специалистов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

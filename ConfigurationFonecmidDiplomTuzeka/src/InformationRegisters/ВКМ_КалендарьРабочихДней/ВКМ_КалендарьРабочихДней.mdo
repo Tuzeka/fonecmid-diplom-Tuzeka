@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3bbb7cf6-e2fe-42da-8738-01d673769182">
+  <producedTypes>
+    <selectionType typeId="1f1b3d22-bee1-4580-ac23-0d38efb54232" valueTypeId="4d2b1786-884e-4a3a-9ca7-d812fda89d1e"/>
+    <listType typeId="4ba5dea4-3fc5-43e1-a4ce-f16ba62c01a2" valueTypeId="9b74d0a8-e96b-4135-a0ba-8892884cf513"/>
+    <managerType typeId="98a388b1-87d8-47e1-9832-eece6f7808f9" valueTypeId="a2e779c6-27dd-4f0d-ae56-e1af593bf502"/>
+    <recordSetType typeId="d69ec905-a5d8-4d20-9c18-627dcefbaf1c" valueTypeId="bd147aa4-a88b-4366-9bc3-32557a8071a7"/>
+    <recordKeyType typeId="57ec8331-ed24-49bf-b499-da35341244da" valueTypeId="3119783a-cfc6-46b2-b00b-19b7180a212f"/>
+    <recordType typeId="eb30fd46-c430-481b-b25b-b21c987b3291" valueTypeId="2fef728b-1596-4f37-8bda-0a49c2e8c4a7"/>
+    <recordManagerType typeId="23cb6553-d450-4d66-8d0a-099e0333df61" valueTypeId="ba82c198-2bbd-4bb8-a1ca-c5178c8b4622"/>
+  </producedTypes>
+  <name>ВКМ_КалендарьРабочихДней</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь рабочих дней</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Календарь рабочих дней</value>
+  </listPresentation>
+  <resources uuid="aae9c3bf-42c4-4d34-b365-37516fbfe75a">
+    <name>ВКМ_Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d7b67f65-d7ee-47cf-bea1-9929ced7eeea">
+    <name>ВКМ_Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

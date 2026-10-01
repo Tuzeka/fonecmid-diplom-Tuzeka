@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3f13388-bb94-47a9-b9c4-d908c1bd6135">
+  <producedTypes>
+    <selectionType typeId="24caee1e-a2e4-429d-916d-5931705569f0" valueTypeId="4d73482b-33f9-4dbe-ac22-4e5f040c3277"/>
+    <listType typeId="5cf661fc-d947-4dc3-aa5d-034e58b4769b" valueTypeId="ce712638-2541-442a-b957-346c6946a4ba"/>
+    <managerType typeId="02331e17-99c2-46d1-8155-aa0d1064f6f5" valueTypeId="8adf53de-60db-4d32-8f9c-c1055b52394e"/>
+    <recordSetType typeId="f7a64223-e6ea-48b9-b1a4-a4c86e4beb88" valueTypeId="36869d80-a833-47b7-b567-39439b8879db"/>
+    <recordKeyType typeId="60baae6a-6a1a-4ba4-a2b2-896d0601c686" valueTypeId="6c5ce229-70b6-4a12-ad0e-6d1bce5196f0"/>
+    <recordType typeId="89241a77-f31d-4bac-80c1-a777fbe7de5f" valueTypeId="373346dc-75ed-4cae-8c90-a6d87e39d48d"/>
+    <recalcsType typeId="8c997c47-e679-43a4-b7b1-c92dd5012987" valueTypeId="1e5de894-f6bc-4f9f-ba59-62fc4712a149"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <resources uuid="d0fc25cc-a1c2-4620-910a-5a493066d440">
+    <name>ВКМ_Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="b0094251-cfc1-4874-b2a1-3e2d91369dea">
+    <name>ВКМ_Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <baseDimension>true</baseDimension>
+  </dimensions>
+  <recalculations uuid="d9fac74e-2626-40dd-adaa-ced4e7cb9c4a">
+    <producedTypes>
+      <recordType typeId="e8bb0024-dad7-41f2-886d-fd8576b755d8" valueTypeId="9e06275d-165e-4398-9193-b40811439ef3"/>
+      <managerType typeId="b803fe47-d725-4b32-957e-dd76993ac4ab" valueTypeId="7733bbba-52a3-4775-a18d-24a697a65aec"/>
+      <recordSetType typeId="8282dd6b-7ee9-46cb-9105-a72ab517ac05" valueTypeId="e184cb95-09b6-4cb6-90a3-0e8a9382bb42"/>
+    </producedTypes>
+    <name>ВКМ_ПерерасчетУдержаний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перерасчет удержаний</value>
+    </synonym>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </recalculations>
+</mdclass:CalculationRegister>
