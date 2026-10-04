@@ -18,6 +18,7 @@
     <key>ru</key>
     <value>Основные начисления</value>
   </synonym>
+  <comment>Основные начисления сотрудников: оклад, отпускные, процент от работ</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Description</inputByString>
   <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Code</inputByString>
@@ -36,6 +37,8 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
   <predefined>
     <items id="1761ea97-46b4-4558-9c81-7968d36b869f">
@@ -51,7 +54,8 @@
       <code xsi:type="core:StringValue">
         <value></value>
       </code>
-      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_Оклад</displaced>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_ПроцентОтРабот</base>
     </items>
     <items id="c9d7b1fd-7325-4723-8475-9e010c092685">
       <name>ВКМ_ПроцентОтРабот</name>
